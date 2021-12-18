@@ -1,0 +1,906 @@
+{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fmodern Consolas;}{\f1\fmodern\fcharset0 Consolas;}{\f2\fnil\fcharset129 Courier New;}}
+{\colortbl ;\red20\green20\blue20;\red142\green142\blue142;\red16\green158\blue98;\red148\green146\blue12;\red170\green51\blue170;\red170\green64\blue64;\red56\green136\blue159;\red126\green126\blue12;\red18\green124\blue155;\red9\green118\blue72;\red94\green147\blue162;\red85\green85\blue85;}
+\viewkind4\uc1\pard\f0\fs20 Authenticating with public key "Imported-Openssh-Key"\cf1\highlight2 
+\par \cf0\highlight0     \u9484?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9488?\cf1\highlight2 
+\par \cf0\highlight0     \u9474?                 \cf3\f1\bullet  MobaXterm Personal Edition v21.5 \bullet\cf0\f0                  \u9474?\cf1\highlight2 
+\par \cf0\highlight0     \u9474?               \cf4 (SSH client, X server and network tools)\cf0                \u9474?\cf1\highlight2 
+\par \cf0\highlight0     \u9474?                                                                      \u9474?\cf1\highlight2 
+\par \cf0\highlight0     \u9474? \u8594? SSH session to \cf5 ec2-user@65.2.148.64                      \cf0           \u9474?\cf1\highlight2 
+\par \cf0\highlight0     \u9474?\f1    \bullet  Direct SSH      :  \cf3\f0 v\cf0                                              \u9474?\cf1\highlight2 
+\par \cf0\highlight0     \u9474?\f1    \bullet  SSH compression :  \cf3\f0 v\cf0                                              \u9474?\cf1\highlight2 
+\par \cf0\highlight0     \u9474?\f1    \bullet  SSH-browser     :  \cf3\f0 v\cf0                                              \u9474?\cf1\highlight2 
+\par \cf0\highlight0     \u9474?\f1    \bullet  X11-forwarding  :  \cf6\f0 x\cf0   (disabled or not supported by server)      \u9474?\cf1\highlight2 
+\par \cf0\highlight0     \u9474?                                                                      \u9474?\cf1\highlight2 
+\par \cf0\highlight0     \u9474? \u8594? For more info, ctrl+click on \cf7\ul help\cf0\ulnone  or visit our \cf7\ul website\cf0\ulnone .            \u9474?\cf1\highlight2 
+\par \cf0\highlight0     \u9492?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9496?\cf1\highlight2 
+\par 
+\par \cf0\highlight0 Last login: Sat Dec 18 08:23:21 2021 from ec2-13-233-177-1.ap-south-1.compute.amazonaws.com\cf1\highlight2 
+\par 
+\par \cf0\highlight0        __|  __|_  )\cf1\highlight2 
+\par \cf0\highlight0        _|  (     /   Amazon Linux 2 AMI\cf1\highlight2 
+\par \cf0\highlight0       ___|\\___|___|\cf1\highlight2 
+\par 
+\par \cf0\highlight0 https://aws.amazon.com/amazon-linux-2/\cf1\highlight2 
+\par \cf0\highlight0 [ec2-user@ip-10-0-0-87 ~]$ sudo su\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-10-0-0-87 ec2-user]# yum update all\cf1\highlight2 
+\par \cf0\highlight0 Loaded plugins: extras_suggestions, langpacks, priorities, update-motd\cf1\highlight2 
+\par \cf0\highlight0 No Match for argument: all\cf1\highlight2 
+\par \cf0\highlight0 No package \b all\b0  available.\cf1\highlight2 
+\par \cf0\highlight0 No packages marked for update\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-10-0-0-87 ec2-user]# yum install httpd -y\cf1\highlight2 
+\par \cf0\highlight0 Loaded plugins: extras_suggestions, langpacks, priorities, update-motd\cf1\highlight2 
+\par \cf0\highlight0 Resolving Dependencies\cf1\highlight2 
+\par \cf0\highlight0 --> Running transaction check\cf1\highlight2 
+\par \cf0\highlight0 ---> Package httpd.x86_64 0:2.4.51-1.amzn2 will be installed\cf1\highlight2 
+\par \cf0\highlight0 --> Processing Dependency: httpd-tools = 2.4.51-1.amzn2 for package: httpd-2.4.51-1.amzn2.x86_64\cf1\highlight2 
+\par \cf0\highlight0 --> Processing Dependency: httpd-filesystem = 2.4.51-1.amzn2 for package: httpd-2.4.51-1.amzn2.x86_64\cf1\highlight2 
+\par \cf0\highlight0 --> Processing Dependency: system-logos-httpd for package: httpd-2.4.51-1.amzn2.x86_64\cf1\highlight2 
+\par \cf0\highlight0 --> Processing Dependency: mod_http2 for package: httpd-2.4.51-1.amzn2.x86_64\cf1\highlight2 
+\par \cf0\highlight0 --> Processing Dependency: httpd-filesystem for package: httpd-2.4.51-1.amzn2.x86_64\cf1\highlight2 
+\par \cf0\highlight0 --> Processing Dependency: /etc/mime.types for package: httpd-2.4.51-1.amzn2.x86_64\cf1\highlight2 
+\par \cf0\highlight0 --> Processing Dependency: libaprutil-1.so.0()(64bit) for package: httpd-2.4.51-1.amzn2.x86_64\cf1\highlight2 
+\par \cf0\highlight0 --> Processing Dependency: libapr-1.so.0()(64bit) for package: httpd-2.4.51-1.amzn2.x86_64\cf1\highlight2 
+\par \cf0\highlight0 --> Running transaction check\cf1\highlight2 
+\par \cf0\highlight0 ---> Package apr.x86_64 0:1.7.0-9.amzn2 will be installed\cf1\highlight2 
+\par \cf0\highlight0 ---> Package apr-util.x86_64 0:1.6.1-5.amzn2.0.2 will be installed\cf1\highlight2 
+\par \cf0\highlight0 --> Processing Dependency: apr-util-bdb(x86-64) = 1.6.1-5.amzn2.0.2 for package: apr-util-1.6.1-5.amzn2.0.2.x86_64\cf1\highlight2 
+\par \cf0\highlight0 ---> Package generic-logos-httpd.noarch 0:18.0.0-4.amzn2 will be installed\cf1\highlight2 
+\par \cf0\highlight0 ---> Package httpd-filesystem.noarch 0:2.4.51-1.amzn2 will be installed\cf1\highlight2 
+\par \cf0\highlight0 ---> Package httpd-tools.x86_64 0:2.4.51-1.amzn2 will be installed\cf1\highlight2 
+\par \cf0\highlight0 ---> Package mailcap.noarch 0:2.1.41-2.amzn2 will be installed\cf1\highlight2 
+\par \cf0\highlight0 ---> Package mod_http2.x86_64 0:1.15.19-1.amzn2.0.1 will be installed\cf1\highlight2 
+\par \cf0\highlight0 --> Running transaction check\cf1\highlight2 
+\par \cf0\highlight0 ---> Package apr-util-bdb.x86_64 0:1.6.1-5.amzn2.0.2 will be installed\cf1\highlight2 
+\par \cf0\highlight0 --> Finished Dependency Resolution\cf1\highlight2 
+\par 
+\par \cf0\highlight0 Dependencies Resolved\cf1\highlight2 
+\par 
+\par \cf0\highlight0 ===========================================================================================================================================\cf1\highlight2 
+\par \cf0\highlight0  Package                               Arch                     Version                                 Repository                    Size\cf1\highlight2 
+\par \cf0\highlight0 ===========================================================================================================================================\cf1\highlight2 
+\par \cf0\highlight0 Installing:\cf1\highlight2 
+\par \cf0\highlight0  httpd                                 x86_64                   2.4.51-1.amzn2                          amzn2-core                   1.3 M\cf1\highlight2 
+\par \cf0\highlight0 Installing for dependencies:\cf1\highlight2 
+\par \cf0\highlight0  apr                                   x86_64                   1.7.0-9.amzn2                           amzn2-core                   122 k\cf1\highlight2 
+\par \cf0\highlight0  apr-util                              x86_64                   1.6.1-5.amzn2.0.2                       amzn2-core                    99 k\cf1\highlight2 
+\par \cf0\highlight0  apr-util-bdb                          x86_64                   1.6.1-5.amzn2.0.2                       amzn2-core                    19 k\cf1\highlight2 
+\par \cf0\highlight0  generic-logos-httpd                   noarch                   18.0.0-4.amzn2                          amzn2-core                    19 k\cf1\highlight2 
+\par \cf0\highlight0  httpd-filesystem                      noarch                   2.4.51-1.amzn2                          amzn2-core                    24 k\cf1\highlight2 
+\par \cf0\highlight0  httpd-tools                           x86_64                   2.4.51-1.amzn2                          amzn2-core                    88 k\cf1\highlight2 
+\par \cf0\highlight0  mailcap                               noarch                   2.1.41-2.amzn2                          amzn2-core                    31 k\cf1\highlight2 
+\par \cf0\highlight0  mod_http2                             x86_64                   1.15.19-1.amzn2.0.1                     amzn2-core                   149 k\cf1\highlight2 
+\par 
+\par \cf0\highlight0 Transaction Summary\cf1\highlight2 
+\par \cf0\highlight0 ===========================================================================================================================================\cf1\highlight2 
+\par \cf0\highlight0 Install  1 Package (+8 Dependent packages)\cf1\highlight2 
+\par 
+\par \cf0\highlight0 Total download size: 1.9 M\cf1\highlight2 
+\par \cf0\highlight0 Installed size: 5.2 M\cf1\highlight2 
+\par \cf0\highlight0 Downloading packages:\cf1\highlight2 
+\par \cf0\highlight0 (1/9): apr-1.7.0-9.amzn2.x86_64.rpm                                                                                 | 122 kB  00:00:00\cf1\highlight2 
+\par \cf0\highlight0 (2/9): apr-util-1.6.1-5.amzn2.0.2.x86_64.rpm                                                                        |  99 kB  00:00:00\cf1\highlight2 
+\par \cf0\highlight0 (3/9): apr-util-bdb-1.6.1-5.amzn2.0.2.x86_64.rpm                                                                    |  19 kB  00:00:00\cf1\highlight2 
+\par \cf0\highlight0 (4/9): generic-logos-httpd-18.0.0-4.amzn2.noarch.rpm                                                                |  19 kB  00:00:00\cf1\highlight2 
+\par \cf0\highlight0 (5/9): httpd-filesystem-2.4.51-1.amzn2.noarch.rpm                                                                   |  24 kB  00:00:00\cf1\highlight2 
+\par \cf0\highlight0 (6/9): httpd-tools-2.4.51-1.amzn2.x86_64.rpm                                                                        |  88 kB  00:00:00\cf1\highlight2 
+\par \cf0\highlight0 (7/9): httpd-2.4.51-1.amzn2.x86_64.rpm                                                                              | 1.3 MB  00:00:00\cf1\highlight2 
+\par \cf0\highlight0 (8/9): mailcap-2.1.41-2.amzn2.noarch.rpm                                                                            |  31 kB  00:00:00\cf1\highlight2 
+\par \cf0\highlight0 (9/9): mod_http2-1.15.19-1.amzn2.0.1.x86_64.rpm                                                                     | 149 kB  00:00:00\cf1\highlight2 
+\par \cf0\highlight0 -------------------------------------------------------------------------------------------------------------------------------------------\cf1\highlight2 
+\par \cf0\highlight0 Total                                                                                                      8.5 MB/s | 1.9 MB  00:00:00\cf1\highlight2 
+\par \cf0\highlight0 Running transaction check\cf1\highlight2 
+\par \cf0\highlight0 Running transaction test\cf1\highlight2 
+\par \cf0\highlight0 Transaction test succeeded\cf1\highlight2 
+\par \cf0\highlight0 Running transaction\cf1\highlight2 
+\par \cf0\highlight0   Installing : apr-1.7.0-9.amzn2.x86_64                                                                                                1/9\cf1\highlight2 
+\par \cf0\highlight0   Installing : apr-util-bdb-1.6.1-5.amzn2.0.2.x86_64                                                                                   2/9\cf1\highlight2 
+\par \cf0\highlight0   Installing : apr-util-1.6.1-5.amzn2.0.2.x86_64                                                                                       3/9\cf1\highlight2 
+\par \cf0\highlight0   Installing : httpd-tools-2.4.51-1.amzn2.x86_64                                                                                       4/9\cf1\highlight2 
+\par \cf0\highlight0   Installing : generic-logos-httpd-18.0.0-4.amzn2.noarch                                                                               5/9\cf1\highlight2 
+\par \cf0\highlight0   Installing : mailcap-2.1.41-2.amzn2.noarch                                                                                           6/9\cf1\highlight2 
+\par \cf0\highlight0   Installing : httpd-filesystem-2.4.51-1.amzn2.noarch                                                                                  7/9\cf1\highlight2 
+\par \cf0\highlight0   Installing : mod_http2-1.15.19-1.amzn2.0.1.x86_64                                                                                    8/9\cf1\highlight2 
+\par \cf0\highlight0   Installing : httpd-2.4.51-1.amzn2.x86_64                                                                                             9/9\cf1\highlight2 
+\par \cf0\highlight0   Verifying  : apr-util-1.6.1-5.amzn2.0.2.x86_64                                                                                       1/9\cf1\highlight2 
+\par \cf0\highlight0   Verifying  : httpd-2.4.51-1.amzn2.x86_64                                                                                             2/9\cf1\highlight2 
+\par \cf0\highlight0   Verifying  : apr-util-bdb-1.6.1-5.amzn2.0.2.x86_64                                                                                   3/9\cf1\highlight2 
+\par \cf0\highlight0   Verifying  : httpd-filesystem-2.4.51-1.amzn2.noarch                                                                                  4/9\cf1\highlight2 
+\par \cf0\highlight0   Verifying  : apr-1.7.0-9.amzn2.x86_64                                                                                                5/9\cf1\highlight2 
+\par \cf0\highlight0   Verifying  : mailcap-2.1.41-2.amzn2.noarch                                                                                           6/9\cf1\highlight2 
+\par \cf0\highlight0   Verifying  : generic-logos-httpd-18.0.0-4.amzn2.noarch                                                                               7/9\cf1\highlight2 
+\par \cf0\highlight0   Verifying  : mod_http2-1.15.19-1.amzn2.0.1.x86_64                                                                                    8/9\cf1\highlight2 
+\par \cf0\highlight0   Verifying  : httpd-tools-2.4.51-1.amzn2.x86_64                                                                                       9/9\cf1\highlight2 
+\par 
+\par \cf0\highlight0 Installed:\cf1\highlight2 
+\par \cf0\highlight0   httpd.x86_64 0:2.4.51-1.amzn2\cf1\highlight2 
+\par 
+\par \cf0\highlight0 Dependency Installed:\cf1\highlight2 
+\par \cf0\highlight0   apr.x86_64 0:1.7.0-9.amzn2                      apr-util.x86_64 0:1.6.1-5.amzn2.0.2          apr-util-bdb.x86_64 0:1.6.1-5.amzn2.0.2\cf1\highlight2 
+\par \cf0\highlight0   generic-logos-httpd.noarch 0:18.0.0-4.amzn2     httpd-filesystem.noarch 0:2.4.51-1.amzn2     httpd-tools.x86_64 0:2.4.51-1.amzn2\cf1\highlight2 
+\par \cf0\highlight0   mailcap.noarch 0:2.1.41-2.amzn2                 mod_http2.x86_64 0:1.15.19-1.amzn2.0.1\cf1\highlight2 
+\par 
+\par \cf0\highlight0 Complete!\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-10-0-0-87 ec2-user]# yum install git -y\cf1\highlight2 
+\par \cf0\highlight0 Loaded plugins: extras_suggestions, langpacks, priorities, update-motd\cf1\highlight2 
+\par \cf0\highlight0 Resolving Dependencies\cf1\highlight2 
+\par \cf0\highlight0 --> Running transaction check\cf1\highlight2 
+\par \cf0\highlight0 ---> Package git.x86_64 0:2.32.0-1.amzn2.0.1 will be installed\cf1\highlight2 
+\par \cf0\highlight0 --> Processing Dependency: perl-Git = 2.32.0-1.amzn2.0.1 for package: git-2.32.0-1.amzn2.0.1.x86_64\cf1\highlight2 
+\par \cf0\highlight0 --> Processing Dependency: git-core-doc = 2.32.0-1.amzn2.0.1 for package: git-2.32.0-1.amzn2.0.1.x86_64\cf1\highlight2 
+\par \cf0\highlight0 --> Processing Dependency: git-core = 2.32.0-1.amzn2.0.1 for package: git-2.32.0-1.amzn2.0.1.x86_64\cf1\highlight2 
+\par \cf0\highlight0 --> Processing Dependency: emacs-filesystem >= 27.1 for package: git-2.32.0-1.amzn2.0.1.x86_64\cf1\highlight2 
+\par \cf0\highlight0 --> Processing Dependency: perl(Term::ReadKey) for package: git-2.32.0-1.amzn2.0.1.x86_64\cf1\highlight2 
+\par \cf0\highlight0 --> Processing Dependency: perl(Git::I18N) for package: git-2.32.0-1.amzn2.0.1.x86_64\cf1\highlight2 
+\par \cf0\highlight0 --> Processing Dependency: perl(Git) for package: git-2.32.0-1.amzn2.0.1.x86_64\cf1\highlight2 
+\par \cf0\highlight0 --> Running transaction check\cf1\highlight2 
+\par \cf0\highlight0 ---> Package emacs-filesystem.noarch 1:27.2-4.amzn2.0.1 will be installed\cf1\highlight2 
+\par \cf0\highlight0 ---> Package git-core.x86_64 0:2.32.0-1.amzn2.0.1 will be installed\cf1\highlight2 
+\par \cf0\highlight0 ---> Package git-core-doc.noarch 0:2.32.0-1.amzn2.0.1 will be installed\cf1\highlight2 
+\par \cf0\highlight0 ---> Package perl-Git.noarch 0:2.32.0-1.amzn2.0.1 will be installed\cf1\highlight2 
+\par \cf0\highlight0 --> Processing Dependency: perl(Error) for package: perl-Git-2.32.0-1.amzn2.0.1.noarch\cf1\highlight2 
+\par \cf0\highlight0 ---> Package perl-TermReadKey.x86_64 0:2.30-20.amzn2.0.2 will be installed\cf1\highlight2 
+\par \cf0\highlight0 --> Running transaction check\cf1\highlight2 
+\par \cf0\highlight0 ---> Package perl-Error.noarch 1:0.17020-2.amzn2 will be installed\cf1\highlight2 
+\par \cf0\highlight0 --> Finished Dependency Resolution\cf1\highlight2 
+\par 
+\par \cf0\highlight0 Dependencies Resolved\cf1\highlight2 
+\par 
+\par \cf0\highlight0 ===========================================================================================================================================\cf1\highlight2 
+\par \cf0\highlight0  Package                             Arch                      Version                                 Repository                     Size\cf1\highlight2 
+\par \cf0\highlight0 ===========================================================================================================================================\cf1\highlight2 
+\par \cf0\highlight0 Installing:\cf1\highlight2 
+\par \cf0\highlight0  git                                 x86_64                    2.32.0-1.amzn2.0.1                      amzn2-core                    126 k\cf1\highlight2 
+\par \cf0\highlight0 Installing for dependencies:\cf1\highlight2 
+\par \cf0\highlight0  emacs-filesystem                    noarch                    1:27.2-4.amzn2.0.1                      amzn2-core                     67 k\cf1\highlight2 
+\par \cf0\highlight0  git-core                            x86_64                    2.32.0-1.amzn2.0.1                      amzn2-core                    4.8 M\cf1\highlight2 
+\par \cf0\highlight0  git-core-doc                        noarch                    2.32.0-1.amzn2.0.1                      amzn2-core                    2.7 M\cf1\highlight2 
+\par \cf0\highlight0  perl-Error                          noarch                    1:0.17020-2.amzn2                       amzn2-core                     32 k\cf1\highlight2 
+\par \cf0\highlight0  perl-Git                            noarch                    2.32.0-1.amzn2.0.1                      amzn2-core                     43 k\cf1\highlight2 
+\par \cf0\highlight0  perl-TermReadKey                    x86_64                    2.30-20.amzn2.0.2                       amzn2-core                     31 k\cf1\highlight2 
+\par 
+\par \cf0\highlight0 Transaction Summary\cf1\highlight2 
+\par \cf0\highlight0 ===========================================================================================================================================\cf1\highlight2 
+\par \cf0\highlight0 Install  1 Package (+6 Dependent packages)\cf1\highlight2 
+\par 
+\par \cf0\highlight0 Total download size: 7.8 M\cf1\highlight2 
+\par \cf0\highlight0 Installed size: 38 M\cf1\highlight2 
+\par \cf0\highlight0 Downloading packages:\cf1\highlight2 
+\par \cf0\highlight0 (1/7): emacs-filesystem-27.2-4.amzn2.0.1.noarch.rpm                                                                 |  67 kB  00:00:00\cf1\highlight2 
+\par \cf0\highlight0 (2/7): git-2.32.0-1.amzn2.0.1.x86_64.rpm                                                                            | 126 kB  00:00:00\cf1\highlight2 
+\par \cf0\highlight0 (3/7): git-core-doc-2.32.0-1.amzn2.0.1.noarch.rpm                                                                   | 2.7 MB  00:00:00\cf1\highlight2 
+\par \cf0\highlight0 (4/7): perl-Error-0.17020-2.amzn2.noarch.rpm                                                                        |  32 kB  00:00:00\cf1\highlight2 
+\par \cf0\highlight0 (5/7): git-core-2.32.0-1.amzn2.0.1.x86_64.rpm                                                                       | 4.8 MB  00:00:00\cf1\highlight2 
+\par \cf0\highlight0 (6/7): perl-Git-2.32.0-1.amzn2.0.1.noarch.rpm                                                                       |  43 kB  00:00:00\cf1\highlight2 
+\par \cf0\highlight0 (7/7): perl-TermReadKey-2.30-20.amzn2.0.2.x86_64.rpm                                                                |  31 kB  00:00:00\cf1\highlight2 
+\par \cf0\highlight0 -------------------------------------------------------------------------------------------------------------------------------------------\cf1\highlight2 
+\par \cf0\highlight0 Total                                                                                                       26 MB/s | 7.8 MB  00:00:00\cf1\highlight2 
+\par \cf0\highlight0 Running transaction check\cf1\highlight2 
+\par \cf0\highlight0 Running transaction test\cf1\highlight2 
+\par \cf0\highlight0 Transaction test succeeded\cf1\highlight2 
+\par \cf0\highlight0 Running transaction\cf1\highlight2 
+\par \cf0\highlight0   Installing : git-core-2.32.0-1.amzn2.0.1.x86_64                                                                                      1/7\cf1\highlight2 
+\par \cf0\highlight0   Installing : git-core-doc-2.32.0-1.amzn2.0.1.noarch                                                                                  2/7\cf1\highlight2 
+\par \cf0\highlight0   Installing : 1:perl-Error-0.17020-2.amzn2.noarch                                                                                     3/7\cf1\highlight2 
+\par \cf0\highlight0   Installing : 1:emacs-filesystem-27.2-4.amzn2.0.1.noarch                                                                              4/7\cf1\highlight2 
+\par \cf0\highlight0   Installing : perl-TermReadKey-2.30-20.amzn2.0.2.x86_64                                                                               5/7\cf1\highlight2 
+\par \cf0\highlight0   Installing : perl-Git-2.32.0-1.amzn2.0.1.noarch                                                                                      6/7\cf1\highlight2 
+\par \cf0\highlight0   Installing : git-2.32.0-1.amzn2.0.1.x86_64                                                                                           7/7\cf1\highlight2 
+\par \cf0\highlight0   Verifying  : perl-TermReadKey-2.30-20.amzn2.0.2.x86_64                                                                               1/7\cf1\highlight2 
+\par \cf0\highlight0   Verifying  : git-core-doc-2.32.0-1.amzn2.0.1.noarch                                                                                  2/7\cf1\highlight2 
+\par \cf0\highlight0   Verifying  : perl-Git-2.32.0-1.amzn2.0.1.noarch                                                                                      3/7\cf1\highlight2 
+\par \cf0\highlight0   Verifying  : 1:emacs-filesystem-27.2-4.amzn2.0.1.noarch                                                                              4/7\cf1\highlight2 
+\par \cf0\highlight0   Verifying  : git-2.32.0-1.amzn2.0.1.x86_64                                                                                           5/7\cf1\highlight2 
+\par \cf0\highlight0   Verifying  : git-core-2.32.0-1.amzn2.0.1.x86_64                                                                                      6/7\cf1\highlight2 
+\par \cf0\highlight0   Verifying  : 1:perl-Error-0.17020-2.amzn2.noarch                                                                                     7/7\cf1\highlight2 
+\par 
+\par \cf0\highlight0 Installed:\cf1\highlight2 
+\par \cf0\highlight0   git.x86_64 0:2.32.0-1.amzn2.0.1\cf1\highlight2 
+\par 
+\par \cf0\highlight0 Dependency Installed:\cf1\highlight2 
+\par \cf0\highlight0   emacs-filesystem.noarch 1:27.2-4.amzn2.0.1     git-core.x86_64 0:2.32.0-1.amzn2.0.1     git-core-doc.noarch 0:2.32.0-1.amzn2.0.1\cf1\highlight2 
+\par \cf0\highlight0   perl-Error.noarch 1:0.17020-2.amzn2            perl-Git.noarch 0:2.32.0-1.amzn2.0.1     perl-TermReadKey.x86_64 0:2.30-20.amzn2.0.2\cf1\highlight2 
+\par 
+\par \cf0\highlight0 Complete!\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-10-0-0-87 ec2-user]# yum install vim -y\cf1\highlight2 
+\par \cf0\highlight0 Loaded plugins: extras_suggestions, langpacks, priorities, update-motd\cf1\highlight2 
+\par \cf0\highlight0 Package 2:vim-enhanced-8.2.3642-1.amzn2.0.1.x86_64 already installed and latest version\cf1\highlight2 
+\par \cf0\highlight0 Nothing to do\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-10-0-0-87 ec2-user]# yum update all\cf1\highlight2 
+\par \cf0\highlight0 Loaded plugins: extras_suggestions, langpacks, priorities, update-motd\cf1\highlight2 
+\par \cf0\highlight0 No Match for argument: all\cf1\highlight2 
+\par \cf0\highlight0 No package \b all\b0  available.\cf1\highlight2 
+\par \cf0\highlight0 No packages marked for update\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-10-0-0-87 ec2-user]# yum install vi -y\cf1\highlight2 
+\par \cf0\highlight0 Loaded plugins: extras_suggestions, langpacks, priorities, update-motd\cf1\highlight2 
+\par \cf0\highlight0 Package 2:vim-minimal-8.2.3642-1.amzn2.0.1.x86_64 already installed and latest version\cf1\highlight2 
+\par \cf0\highlight0 Nothing to do\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-10-0-0-87 ec2-user]# yum install java -y\cf1\highlight2 
+\par \cf0\highlight0 Loaded plugins: extras_suggestions, langpacks, priorities, update-motd\cf1\highlight2 
+\par \cf0\highlight0 Resolving Dependencies\cf1\highlight2 
+\par \cf0\highlight0 --> Running transaction check\cf1\highlight2 
+\par \cf0\highlight0 ---> Package java-17-amazon-corretto.x86_64 1:17.0.1+12-3.amzn2.1 will be installed\cf1\highlight2 
+\par \cf0\highlight0 --> Processing Dependency: java-17-amazon-corretto-headless(x86-64) = 1:17.0.1+12-3.amzn2.1 for package: 1:java-17-amazon-corretto-17.0.1+12-3.amzn2.1.x86_64\cf1\highlight2 
+\par \cf0\highlight0 --> Processing Dependency: dejavu-sans-mono-fonts for package: 1:java-17-amazon-corretto-17.0.1+12-3.amzn2.1.x86_64\cf1\highlight2 
+\par \cf0\highlight0 --> Processing Dependency: dejavu-serif-fonts for package: 1:java-17-amazon-corretto-17.0.1+12-3.amzn2.1.x86_64\cf1\highlight2 
+\par \cf0\highlight0 --> Processing Dependency: dejavu-sans-fonts for package: 1:java-17-amazon-corretto-17.0.1+12-3.amzn2.1.x86_64\cf1\highlight2 
+\par \cf0\highlight0 --> Processing Dependency: alsa-lib for package: 1:java-17-amazon-corretto-17.0.1+12-3.amzn2.1.x86_64\cf1\highlight2 
+\par \cf0\highlight0 --> Processing Dependency: libXtst for package: 1:java-17-amazon-corretto-17.0.1+12-3.amzn2.1.x86_64\cf1\highlight2 
+\par \cf0\highlight0 --> Processing Dependency: libXrandr for package: 1:java-17-amazon-corretto-17.0.1+12-3.amzn2.1.x86_64\cf1\highlight2 
+\par \cf0\highlight0 --> Processing Dependency: libXrender for package: 1:java-17-amazon-corretto-17.0.1+12-3.amzn2.1.x86_64\cf1\highlight2 
+\par \cf0\highlight0 --> Processing Dependency: libXt for package: 1:java-17-amazon-corretto-17.0.1+12-3.amzn2.1.x86_64\cf1\highlight2 
+\par \cf0\highlight0 --> Processing Dependency: libXinerama for package: 1:java-17-amazon-corretto-17.0.1+12-3.amzn2.1.x86_64\cf1\highlight2 
+\par \cf0\highlight0 --> Processing Dependency: libXi for package: 1:java-17-amazon-corretto-17.0.1+12-3.amzn2.1.x86_64\cf1\highlight2 
+\par \cf0\highlight0 --> Processing Dependency: libX11 for package: 1:java-17-amazon-corretto-17.0.1+12-3.amzn2.1.x86_64\cf1\highlight2 
+\par \cf0\highlight0 --> Running transaction check\cf1\highlight2 
+\par \cf0\highlight0 ---> Package alsa-lib.x86_64 0:1.1.4.1-2.amzn2 will be installed\cf1\highlight2 
+\par \cf0\highlight0 ---> Package dejavu-sans-fonts.noarch 0:2.33-6.amzn2 will be installed\cf1\highlight2 
+\par \cf0\highlight0 --> Processing Dependency: dejavu-fonts-common = 2.33-6.amzn2 for package: dejavu-sans-fonts-2.33-6.amzn2.noarch\cf1\highlight2 
+\par \cf0\highlight0 ---> Package dejavu-sans-mono-fonts.noarch 0:2.33-6.amzn2 will be installed\cf1\highlight2 
+\par \cf0\highlight0 ---> Package dejavu-serif-fonts.noarch 0:2.33-6.amzn2 will be installed\cf1\highlight2 
+\par \cf0\highlight0 ---> Package java-17-amazon-corretto-headless.x86_64 1:17.0.1+12-3.amzn2.1 will be installed\cf1\highlight2 
+\par \cf0\highlight0 --> Processing Dependency: log4j-cve-2021-44228-cve-mitigations for package: 1:java-17-amazon-corretto-headless-17.0.1+12-3.amzn2.1.x86_64\cf1\highlight2 
+\par \cf0\highlight0 --> Processing Dependency: fontconfig for package: 1:java-17-amazon-corretto-headless-17.0.1+12-3.amzn2.1.x86_64\cf1\highlight2 
+\par \cf0\highlight0 --> Processing Dependency: jpackage-utils for package: 1:java-17-amazon-corretto-headless-17.0.1+12-3.amzn2.1.x86_64\cf1\highlight2 
+\par \cf0\highlight0 ---> Package libX11.x86_64 0:1.6.7-3.amzn2.0.2 will be installed\cf1\highlight2 
+\par \cf0\highlight0 --> Processing Dependency: libX11-common >= 1.6.7-3.amzn2.0.2 for package: libX11-1.6.7-3.amzn2.0.2.x86_64\cf1\highlight2 
+\par \cf0\highlight0 --> Processing Dependency: libxcb.so.1()(64bit) for package: libX11-1.6.7-3.amzn2.0.2.x86_64\cf1\highlight2 
+\par \cf0\highlight0 ---> Package libXi.x86_64 0:1.7.9-1.amzn2.0.2 will be installed\cf1\highlight2 
+\par \cf0\highlight0 --> Processing Dependency: libXext.so.6()(64bit) for package: libXi-1.7.9-1.amzn2.0.2.x86_64\cf1\highlight2 
+\par \cf0\highlight0 ---> Package libXinerama.x86_64 0:1.1.3-2.1.amzn2.0.2 will be installed\cf1\highlight2 
+\par \cf0\highlight0 ---> Package libXrandr.x86_64 0:1.5.1-2.amzn2.0.3 will be installed\cf1\highlight2 
+\par \cf0\highlight0 ---> Package libXrender.x86_64 0:0.9.10-1.amzn2.0.2 will be installed\cf1\highlight2 
+\par \cf0\highlight0 ---> Package libXt.x86_64 0:1.1.5-3.amzn2.0.2 will be installed\cf1\highlight2 
+\par \cf0\highlight0 --> Processing Dependency: libSM.so.6()(64bit) for package: libXt-1.1.5-3.amzn2.0.2.x86_64\cf1\highlight2 
+\par \cf0\highlight0 --> Processing Dependency: libICE.so.6()(64bit) for package: libXt-1.1.5-3.amzn2.0.2.x86_64\cf1\highlight2 
+\par \cf0\highlight0 ---> Package libXtst.x86_64 0:1.2.3-1.amzn2.0.2 will be installed\cf1\highlight2 
+\par \cf0\highlight0 --> Running transaction check\cf1\highlight2 
+\par \cf0\highlight0 ---> Package dejavu-fonts-common.noarch 0:2.33-6.amzn2 will be installed\cf1\highlight2 
+\par \cf0\highlight0 --> Processing Dependency: fontpackages-filesystem for package: dejavu-fonts-common-2.33-6.amzn2.noarch\cf1\highlight2 
+\par \cf0\highlight0 ---> Package fontconfig.x86_64 0:2.13.0-4.3.amzn2 will be installed\cf1\highlight2 
+\par \cf0\highlight0 ---> Package javapackages-tools.noarch 0:3.4.1-11.amzn2 will be installed\cf1\highlight2 
+\par \cf0\highlight0 --> Processing Dependency: python-javapackages = 3.4.1-11.amzn2 for package: javapackages-tools-3.4.1-11.amzn2.noarch\cf1\highlight2 
+\par \cf0\highlight0 --> Processing Dependency: libxslt for package: javapackages-tools-3.4.1-11.amzn2.noarch\cf1\highlight2 
+\par \cf0\highlight0 ---> Package libICE.x86_64 0:1.0.9-9.amzn2.0.2 will be installed\cf1\highlight2 
+\par \cf0\highlight0 ---> Package libSM.x86_64 0:1.2.2-2.amzn2.0.2 will be installed\cf1\highlight2 
+\par \cf0\highlight0 ---> Package libX11-common.noarch 0:1.6.7-3.amzn2.0.2 will be installed\cf1\highlight2 
+\par \cf0\highlight0 ---> Package libXext.x86_64 0:1.3.3-3.amzn2.0.2 will be installed\cf1\highlight2 
+\par \cf0\highlight0 ---> Package libxcb.x86_64 0:1.12-1.amzn2.0.2 will be installed\cf1\highlight2 
+\par \cf0\highlight0 --> Processing Dependency: libXau.so.6()(64bit) for package: libxcb-1.12-1.amzn2.0.2.x86_64\cf1\highlight2 
+\par \cf0\highlight0 ---> Package log4j-cve-2021-44228-hotpatch.noarch 0:1.1-9.amzn2 will be installed\cf1\highlight2 
+\par \cf0\highlight0 --> Running transaction check\cf1\highlight2 
+\par \cf0\highlight0 ---> Package fontpackages-filesystem.noarch 0:1.44-8.amzn2 will be installed\cf1\highlight2 
+\par \cf0\highlight0 ---> Package libXau.x86_64 0:1.0.8-2.1.amzn2.0.2 will be installed\cf1\highlight2 
+\par \cf0\highlight0 ---> Package libxslt.x86_64 0:1.1.28-6.amzn2 will be installed\cf1\highlight2 
+\par \cf0\highlight0 ---> Package python-javapackages.noarch 0:3.4.1-11.amzn2 will be installed\cf1\highlight2 
+\par \cf0\highlight0 --> Processing Dependency: python-lxml for package: python-javapackages-3.4.1-11.amzn2.noarch\cf1\highlight2 
+\par \cf0\highlight0 --> Running transaction check\cf1\highlight2 
+\par \cf0\highlight0 ---> Package python-lxml.x86_64 0:3.2.1-4.amzn2.0.3 will be installed\cf1\highlight2 
+\par \cf0\highlight0 --> Finished Dependency Resolution\cf1\highlight2 
+\par 
+\par \cf0\highlight0 Dependencies Resolved\cf1\highlight2 
+\par 
+\par \cf0\highlight0 ===========================================================================================================================================\cf1\highlight2 
+\par \cf0\highlight0  Package                                        Arch                 Version                                Repository                Size\cf1\highlight2 
+\par \cf0\highlight0 ===========================================================================================================================================\cf1\highlight2 
+\par \cf0\highlight0 Installing:\cf1\highlight2 
+\par \cf0\highlight0  java-17-amazon-corretto                        x86_64               1:17.0.1+12-3.amzn2.1                  amzn2-core               178 k\cf1\highlight2 
+\par \cf0\highlight0 Installing for dependencies:\cf1\highlight2 
+\par \cf0\highlight0  alsa-lib                                       x86_64               1.1.4.1-2.amzn2                        amzn2-core               425 k\cf1\highlight2 
+\par \cf0\highlight0  dejavu-fonts-common                            noarch               2.33-6.amzn2                           amzn2-core                64 k\cf1\highlight2 
+\par \cf0\highlight0  dejavu-sans-fonts                              noarch               2.33-6.amzn2                           amzn2-core               1.4 M\cf1\highlight2 
+\par \cf0\highlight0  dejavu-sans-mono-fonts                         noarch               2.33-6.amzn2                           amzn2-core               433 k\cf1\highlight2 
+\par \cf0\highlight0  dejavu-serif-fonts                             noarch               2.33-6.amzn2                           amzn2-core               777 k\cf1\highlight2 
+\par \cf0\highlight0  fontconfig                                     x86_64               2.13.0-4.3.amzn2                       amzn2-core               253 k\cf1\highlight2 
+\par \cf0\highlight0  fontpackages-filesystem                        noarch               1.44-8.amzn2                           amzn2-core                10 k\cf1\highlight2 
+\par \cf0\highlight0  java-17-amazon-corretto-headless               x86_64               1:17.0.1+12-3.amzn2.1                  amzn2-core                94 M\cf1\highlight2 
+\par \cf0\highlight0  javapackages-tools                             noarch               3.4.1-11.amzn2                         amzn2-core                73 k\cf1\highlight2 
+\par \cf0\highlight0  libICE                                         x86_64               1.0.9-9.amzn2.0.2                      amzn2-core                67 k\cf1\highlight2 
+\par \cf0\highlight0  libSM                                          x86_64               1.2.2-2.amzn2.0.2                      amzn2-core                39 k\cf1\highlight2 
+\par \cf0\highlight0  libX11                                         x86_64               1.6.7-3.amzn2.0.2                      amzn2-core               606 k\cf1\highlight2 
+\par \cf0\highlight0  libX11-common                                  noarch               1.6.7-3.amzn2.0.2                      amzn2-core               165 k\cf1\highlight2 
+\par \cf0\highlight0  libXau                                         x86_64               1.0.8-2.1.amzn2.0.2                    amzn2-core                29 k\cf1\highlight2 
+\par \cf0\highlight0  libXext                                        x86_64               1.3.3-3.amzn2.0.2                      amzn2-core                39 k\cf1\highlight2 
+\par \cf0\highlight0  libXi                                          x86_64               1.7.9-1.amzn2.0.2                      amzn2-core                41 k\cf1\highlight2 
+\par \cf0\highlight0  libXinerama                                    x86_64               1.1.3-2.1.amzn2.0.2                    amzn2-core                14 k\cf1\highlight2 
+\par \cf0\highlight0  libXrandr                                      x86_64               1.5.1-2.amzn2.0.3                      amzn2-core                27 k\cf1\highlight2 
+\par \cf0\highlight0  libXrender                                     x86_64               0.9.10-1.amzn2.0.2                     amzn2-core                26 k\cf1\highlight2 
+\par \cf0\highlight0  libXt                                          x86_64               1.1.5-3.amzn2.0.2                      amzn2-core               177 k\cf1\highlight2 
+\par \cf0\highlight0  libXtst                                        x86_64               1.2.3-1.amzn2.0.2                      amzn2-core                20 k\cf1\highlight2 
+\par \cf0\highlight0  libxcb                                         x86_64               1.12-1.amzn2.0.2                       amzn2-core               216 k\cf1\highlight2 
+\par \cf0\highlight0  libxslt                                        x86_64               1.1.28-6.amzn2                         amzn2-core               240 k\cf1\highlight2 
+\par \cf0\highlight0  log4j-cve-2021-44228-hotpatch                  noarch               1.1-9.amzn2                            amzn2-core               145 k\cf1\highlight2 
+\par \cf0\highlight0  python-javapackages                            noarch               3.4.1-11.amzn2                         amzn2-core                31 k\cf1\highlight2 
+\par \cf0\highlight0  python-lxml                                    x86_64               3.2.1-4.amzn2.0.3                      amzn2-core               1.0 M\cf1\highlight2 
+\par 
+\par \cf0\highlight0 Transaction Summary\cf1\highlight2 
+\par \cf0\highlight0 ===========================================================================================================================================\cf1\highlight2 
+\par \cf0\highlight0 Install  1 Package (+26 Dependent packages)\cf1\highlight2 
+\par 
+\par \cf0\highlight0 Total download size: 100 M\cf1\highlight2 
+\par \cf0\highlight0 Installed size: 256 M\cf1\highlight2 
+\par \cf0\highlight0 Downloading packages:\cf1\highlight2 
+\par \cf0\highlight0 (1/27): dejavu-fonts-common-2.33-6.amzn2.noarch.rpm                                                                 |  64 kB  00:00:00\cf1\highlight2 
+\par \cf0\highlight0 (2/27): alsa-lib-1.1.4.1-2.amzn2.x86_64.rpm                                                                         | 425 kB  00:00:00\cf1\highlight2 
+\par \cf0\highlight0 (3/27): dejavu-sans-mono-fonts-2.33-6.amzn2.noarch.rpm                                                              | 433 kB  00:00:00\cf1\highlight2 
+\par \cf0\highlight0 (4/27): dejavu-sans-fonts-2.33-6.amzn2.noarch.rpm                                                                   | 1.4 MB  00:00:00\cf1\highlight2 
+\par \cf0\highlight0 (5/27): dejavu-serif-fonts-2.33-6.amzn2.noarch.rpm                                                                  | 777 kB  00:00:00\cf1\highlight2 
+\par \cf0\highlight0 (6/27): fontconfig-2.13.0-4.3.amzn2.x86_64.rpm                                                                      | 253 kB  00:00:00\cf1\highlight2 
+\par \cf0\highlight0 (7/27): fontpackages-filesystem-1.44-8.amzn2.noarch.rpm                                                             |  10 kB  00:00:00\cf1\highlight2 
+\par \cf0\highlight0 (8/27): java-17-amazon-corretto-17.0.1+12-3.amzn2.1.x86_64.rpm                                                      | 178 kB  00:00:00\cf1\highlight2 
+\par \cf0\highlight0 (9/27): javapackages-tools-3.4.1-11.amzn2.noarch.rpm                                                                |  73 kB  00:00:00\cf1\highlight2 
+\par \cf0\highlight0 (10/27): libICE-1.0.9-9.amzn2.0.2.x86_64.rpm                                                                        |  67 kB  00:00:00\cf1\highlight2 
+\par \cf0\highlight0 (11/27): libSM-1.2.2-2.amzn2.0.2.x86_64.rpm                                                                         |  39 kB  00:00:00\cf1\highlight2 
+\par \cf0\highlight0 (12/27): libX11-1.6.7-3.amzn2.0.2.x86_64.rpm                                                                        | 606 kB  00:00:00\cf1\highlight2 
+\par \cf0\highlight0 (13/27): libX11-common-1.6.7-3.amzn2.0.2.noarch.rpm                                                                 | 165 kB  00:00:00\cf1\highlight2 
+\par \cf0\highlight0 (14/27): libXau-1.0.8-2.1.amzn2.0.2.x86_64.rpm                                                                      |  29 kB  00:00:00\cf1\highlight2 
+\par \cf0\highlight0 (15/27): libXext-1.3.3-3.amzn2.0.2.x86_64.rpm                                                                       |  39 kB  00:00:00\cf1\highlight2 
+\par \cf0\highlight0 (16/27): libXi-1.7.9-1.amzn2.0.2.x86_64.rpm                                                                         |  41 kB  00:00:00\cf1\highlight2 
+\par \cf0\highlight0 (17/27): libXinerama-1.1.3-2.1.amzn2.0.2.x86_64.rpm                                                                 |  14 kB  00:00:00\cf1\highlight2 
+\par \cf0\highlight0 (18/27): libXrandr-1.5.1-2.amzn2.0.3.x86_64.rpm                                                                     |  27 kB  00:00:00\cf1\highlight2 
+\par \cf0\highlight0 (19/27): libXrender-0.9.10-1.amzn2.0.2.x86_64.rpm                                                                   |  26 kB  00:00:00\cf1\highlight2 
+\par \cf0\highlight0 (20/27): libXt-1.1.5-3.amzn2.0.2.x86_64.rpm                                                                         | 177 kB  00:00:00\cf1\highlight2 
+\par \cf0\highlight0 (21/27): libXtst-1.2.3-1.amzn2.0.2.x86_64.rpm                                                                       |  20 kB  00:00:00\cf1\highlight2 
+\par \cf0\highlight0 (22/27): libxcb-1.12-1.amzn2.0.2.x86_64.rpm                                                                         | 216 kB  00:00:00\cf1\highlight2 
+\par \cf0\highlight0 (23/27): libxslt-1.1.28-6.amzn2.x86_64.rpm                                                                          | 240 kB  00:00:00\cf1\highlight2 
+\par \cf0\highlight0 (24/27): log4j-cve-2021-44228-hotpatch-1.1-9.amzn2.noarch.rpm                                                       | 145 kB  00:00:00\cf1\highlight2 
+\par \cf0\highlight0 (25/27): python-javapackages-3.4.1-11.amzn2.noarch.rpm                                                              |  31 kB  00:00:00\cf1\highlight2 
+\par \cf0\highlight0 (26/27): python-lxml-3.2.1-4.amzn2.0.3.x86_64.rpm                                                                   | 1.0 MB  00:00:00\cf1\highlight2 
+\par \cf0\highlight0 (27/27): java-17-amazon-corretto-headless-17.0.1+12-3.amzn2.1.x86_64.rpm                                            |  94 MB  00:00:02\cf1\highlight2 
+\par \cf0\highlight0 -------------------------------------------------------------------------------------------------------------------------------------------\cf1\highlight2 
+\par \cf0\highlight0 Total                                                                                                       37 MB/s | 100 MB  00:00:02\cf1\highlight2 
+\par \cf0\highlight0 Running transaction check\cf1\highlight2 
+\par \cf0\highlight0 Running transaction test\cf1\highlight2 
+\par \cf0\highlight0 Transaction test succeeded\cf1\highlight2 
+\par \cf0\highlight0 Running transaction\cf1\highlight2 
+\par \cf0\highlight0   Installing : libICE-1.0.9-9.amzn2.0.2.x86_64                                                                                        1/27\cf1\highlight2 
+\par \cf0\highlight0   Installing : libxslt-1.1.28-6.amzn2.x86_64                                                                                          2/27\cf1\highlight2 
+\par \cf0\highlight0   Installing : fontpackages-filesystem-1.44-8.amzn2.noarch                                                                            3/27\cf1\highlight2 
+\par \cf0\highlight0   Installing : dejavu-fonts-common-2.33-6.amzn2.noarch                                                                                4/27\cf1\highlight2 
+\par \cf0\highlight0   Installing : dejavu-sans-fonts-2.33-6.amzn2.noarch                                                                                  5/27\cf1\highlight2 
+\par \cf0\highlight0   Installing : fontconfig-2.13.0-4.3.amzn2.x86_64                                                                                     6/27\cf1\highlight2 
+\par \cf0\highlight0   Installing : dejavu-serif-fonts-2.33-6.amzn2.noarch                                                                                 7/27\cf1\highlight2 
+\par \cf0\highlight0   Installing : dejavu-sans-mono-fonts-2.33-6.amzn2.noarch                                                                             8/27\cf1\highlight2 
+\par \cf0\highlight0   Installing : python-lxml-3.2.1-4.amzn2.0.3.x86_64                                                                                   9/27\cf1\highlight2 
+\par \cf0\highlight0   Installing : python-javapackages-3.4.1-11.amzn2.noarch                                                                             10/27\cf1\highlight2 
+\par \cf0\highlight0   Installing : javapackages-tools-3.4.1-11.amzn2.noarch                                                                              11/27\cf1\highlight2 
+\par \cf0\highlight0   Installing : libSM-1.2.2-2.amzn2.0.2.x86_64                                                                                        12/27\cf1\highlight2 
+\par \cf0\highlight0   Installing : alsa-lib-1.1.4.1-2.amzn2.x86_64                                                                                       13/27\cf1\highlight2 
+\par \cf0\highlight0   Installing : libXau-1.0.8-2.1.amzn2.0.2.x86_64                                                                                     14/27\cf1\highlight2 
+\par \cf0\highlight0   Installing : libxcb-1.12-1.amzn2.0.2.x86_64                                                                                        15/27\cf1\highlight2 
+\par \cf0\highlight0   Installing : libX11-common-1.6.7-3.amzn2.0.2.noarch                                                                                16/27\cf1\highlight2 
+\par \cf0\highlight0   Installing : libX11-1.6.7-3.amzn2.0.2.x86_64                                                                                       17/27\cf1\highlight2 
+\par \cf0\highlight0   Installing : libXext-1.3.3-3.amzn2.0.2.x86_64                                                                                      18/27\cf1\highlight2 
+\par \cf0\highlight0   Installing : libXi-1.7.9-1.amzn2.0.2.x86_64                                                                                        19/27\cf1\highlight2 
+\par \cf0\highlight0   Installing : libXrender-0.9.10-1.amzn2.0.2.x86_64                                                                                  20/27\cf1\highlight2 
+\par \cf0\highlight0   Installing : libXrandr-1.5.1-2.amzn2.0.3.x86_64                                                                                    21/27\cf1\highlight2 
+\par \cf0\highlight0   Installing : libXtst-1.2.3-1.amzn2.0.2.x86_64                                                                                      22/27\cf1\highlight2 
+\par \cf0\highlight0   Installing : libXinerama-1.1.3-2.1.amzn2.0.2.x86_64                                                                                23/27\cf1\highlight2 
+\par \cf0\highlight0   Installing : libXt-1.1.5-3.amzn2.0.2.x86_64                                                                                        24/27\cf1\highlight2 
+\par \cf0\highlight0   Installing : log4j-cve-2021-44228-hotpatch-1.1-9.amzn2.noarch                                                                      25/27\cf1\highlight2 
+\par \cf0\highlight0 Created symlink from /etc/systemd/system/multi-user.target.wants/log4j-cve-2021-44228-hotpatch.service to /usr/lib/systemd/system/log4j-cve-2021-44228-hotpatch.service.\cf1\highlight2 
+\par \cf0\highlight0   Installing : 1:java-17-amazon-corretto-headless-17.0.1+12-3.amzn2.1.x86_64                                                         26/27\cf1\highlight2 
+\par \cf0\highlight0   Installing : 1:java-17-amazon-corretto-17.0.1+12-3.amzn2.1.x86_64                                                                  27/27\cf1\highlight2 
+\par \cf0\highlight0   Verifying  : dejavu-serif-fonts-2.33-6.amzn2.noarch                                                                                 1/27\cf1\highlight2 
+\par \cf0\highlight0   Verifying  : python-lxml-3.2.1-4.amzn2.0.3.x86_64                                                                                   2/27\cf1\highlight2 
+\par \cf0\highlight0   Verifying  : fontpackages-filesystem-1.44-8.amzn2.noarch                                                                            3/27\cf1\highlight2 
+\par \cf0\highlight0   Verifying  : libxcb-1.12-1.amzn2.0.2.x86_64                                                                                         4/27\cf1\highlight2 
+\par \cf0\highlight0   Verifying  : libXrandr-1.5.1-2.amzn2.0.3.x86_64                                                                                     5/27\cf1\highlight2 
+\par \cf0\highlight0   Verifying  : libXext-1.3.3-3.amzn2.0.2.x86_64                                                                                       6/27\cf1\highlight2 
+\par \cf0\highlight0   Verifying  : libX11-1.6.7-3.amzn2.0.2.x86_64                                                                                        7/27\cf1\highlight2 
+\par \cf0\highlight0   Verifying  : 1:java-17-amazon-corretto-17.0.1+12-3.amzn2.1.x86_64                                                                   8/27\cf1\highlight2 
+\par \cf0\highlight0   Verifying  : dejavu-sans-mono-fonts-2.33-6.amzn2.noarch                                                                             9/27\cf1\highlight2 
+\par \cf0\highlight0   Verifying  : log4j-cve-2021-44228-hotpatch-1.1-9.amzn2.noarch                                                                      10/27\cf1\highlight2 
+\par \cf0\highlight0   Verifying  : libX11-common-1.6.7-3.amzn2.0.2.noarch                                                                                11/27\cf1\highlight2 
+\par \cf0\highlight0   Verifying  : dejavu-fonts-common-2.33-6.amzn2.noarch                                                                               12/27\cf1\highlight2 
+\par \cf0\highlight0   Verifying  : libXau-1.0.8-2.1.amzn2.0.2.x86_64                                                                                     13/27\cf1\highlight2 
+\par \cf0\highlight0   Verifying  : libSM-1.2.2-2.amzn2.0.2.x86_64                                                                                        14/27\cf1\highlight2 
+\par \cf0\highlight0   Verifying  : libXrender-0.9.10-1.amzn2.0.2.x86_64                                                                                  15/27\cf1\highlight2 
+\par \cf0\highlight0   Verifying  : dejavu-sans-fonts-2.33-6.amzn2.noarch                                                                                 16/27\cf1\highlight2 
+\par \cf0\highlight0   Verifying  : fontconfig-2.13.0-4.3.amzn2.x86_64                                                                                    17/27\cf1\highlight2 
+\par \cf0\highlight0   Verifying  : libXt-1.1.5-3.amzn2.0.2.x86_64                                                                                        18/27\cf1\highlight2 
+\par \cf0\highlight0   Verifying  : libXinerama-1.1.3-2.1.amzn2.0.2.x86_64                                                                                19/27\cf1\highlight2 
+\par \cf0\highlight0   Verifying  : libXi-1.7.9-1.amzn2.0.2.x86_64                                                                                        20/27\cf1\highlight2 
+\par \cf0\highlight0   Verifying  : libxslt-1.1.28-6.amzn2.x86_64                                                                                         21/27\cf1\highlight2 
+\par \cf0\highlight0   Verifying  : python-javapackages-3.4.1-11.amzn2.noarch                                                                             22/27\cf1\highlight2 
+\par \cf0\highlight0   Verifying  : libXtst-1.2.3-1.amzn2.0.2.x86_64                                                                                      23/27\cf1\highlight2 
+\par \cf0\highlight0   Verifying  : alsa-lib-1.1.4.1-2.amzn2.x86_64                                                                                       24/27\cf1\highlight2 
+\par \cf0\highlight0   Verifying  : libICE-1.0.9-9.amzn2.0.2.x86_64                                                                                       25/27\cf1\highlight2 
+\par \cf0\highlight0   Verifying  : 1:java-17-amazon-corretto-headless-17.0.1+12-3.amzn2.1.x86_64                                                         26/27\cf1\highlight2 
+\par \cf0\highlight0   Verifying  : javapackages-tools-3.4.1-11.amzn2.noarch                                                                              27/27\cf1\highlight2 
+\par 
+\par \cf0\highlight0 Installed:\cf1\highlight2 
+\par \cf0\highlight0   java-17-amazon-corretto.x86_64 1:17.0.1+12-3.amzn2.1\cf1\highlight2 
+\par 
+\par \cf0\highlight0 Dependency Installed:\cf1\highlight2 
+\par \cf0\highlight0   alsa-lib.x86_64 0:1.1.4.1-2.amzn2                            dejavu-fonts-common.noarch 0:2.33-6.amzn2\cf1\highlight2 
+\par \cf0\highlight0   dejavu-sans-fonts.noarch 0:2.33-6.amzn2                      dejavu-sans-mono-fonts.noarch 0:2.33-6.amzn2\cf1\highlight2 
+\par \cf0\highlight0   dejavu-serif-fonts.noarch 0:2.33-6.amzn2                     fontconfig.x86_64 0:2.13.0-4.3.amzn2\cf1\highlight2 
+\par \cf0\highlight0   fontpackages-filesystem.noarch 0:1.44-8.amzn2                java-17-amazon-corretto-headless.x86_64 1:17.0.1+12-3.amzn2.1\cf1\highlight2 
+\par \cf0\highlight0   javapackages-tools.noarch 0:3.4.1-11.amzn2                   libICE.x86_64 0:1.0.9-9.amzn2.0.2\cf1\highlight2 
+\par \cf0\highlight0   libSM.x86_64 0:1.2.2-2.amzn2.0.2                             libX11.x86_64 0:1.6.7-3.amzn2.0.2\cf1\highlight2 
+\par \cf0\highlight0   libX11-common.noarch 0:1.6.7-3.amzn2.0.2                     libXau.x86_64 0:1.0.8-2.1.amzn2.0.2\cf1\highlight2 
+\par \cf0\highlight0   libXext.x86_64 0:1.3.3-3.amzn2.0.2                           libXi.x86_64 0:1.7.9-1.amzn2.0.2\cf1\highlight2 
+\par \cf0\highlight0   libXinerama.x86_64 0:1.1.3-2.1.amzn2.0.2                     libXrandr.x86_64 0:1.5.1-2.amzn2.0.3\cf1\highlight2 
+\par \cf0\highlight0   libXrender.x86_64 0:0.9.10-1.amzn2.0.2                       libXt.x86_64 0:1.1.5-3.amzn2.0.2\cf1\highlight2 
+\par \cf0\highlight0   libXtst.x86_64 0:1.2.3-1.amzn2.0.2                           libxcb.x86_64 0:1.12-1.amzn2.0.2\cf1\highlight2 
+\par \cf0\highlight0   libxslt.x86_64 0:1.1.28-6.amzn2                              log4j-cve-2021-44228-hotpatch.noarch 0:1.1-9.amzn2\cf1\highlight2 
+\par \cf0\highlight0   python-javapackages.noarch 0:3.4.1-11.amzn2                  python-lxml.x86_64 0:3.2.1-4.amzn2.0.3\cf1\highlight2 
+\par 
+\par \cf0\highlight0 Complete!\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-10-0-0-87 ec2-user]# java --version\cf1\highlight2 
+\par \cf0\highlight0 openjdk 17.0.1 2021-10-19 LTS\cf1\highlight2 
+\par \cf0\highlight0 OpenJDK Runtime Environment Corretto-17.0.1.12.3 (build 17.0.1+12-LTS)\cf1\highlight2 
+\par \cf0\highlight0 OpenJDK 64-Bit Server VM Corretto-17.0.1.12.3 (build 17.0.1+12-LTS, mixed mode, sharing)\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-10-0-0-87 ec2-user]# pwd\cf1\highlight2 
+\par \cf0\highlight0 /home/ec2-user\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-10-0-0-87 ec2-user]# ls\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-10-0-0-87 ec2-user]# cd /var/www/html\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-10-0-0-87 html]# vim index.html\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-10-0-0-87 html]# ll\cf1\highlight2 
+\par \cf0\highlight0 total 4\cf1\highlight2 
+\par \cf0\highlight0 -rw-r--r-- 1 root root 22 Dec 18 12:45 index.html\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-10-0-0-87 html]# chmod 777 index.html\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-10-0-0-87 html]# service httpd start\cf1\highlight2 
+\par \cf0\highlight0 Redirecting to /bin/systemctl start httpd.service\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-10-0-0-87 html]# systemctl start httpd\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-10-0-0-87 html]# systemctl httpd start\cf1\highlight2 
+\par \cf0\highlight0 Unknown operation 'httpd'.\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-10-0-0-87 html]# cd /home/ec2-user/\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-10-0-0-87 ec2-user]# git --version\cf1\highlight2 
+\par \cf0\highlight0 git version 2.32.0\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-10-0-0-87 ec2-user]# git config --global user.name\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-10-0-0-87 ec2-user]# ls\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-10-0-0-87 ec2-user]# mkdir Vijay\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-10-0-0-87 ec2-user]# cd Vijay/\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-10-0-0-87 Vijay]# git init GITREPO\cf1\highlight2 
+\par \cf8\highlight0 hint: Using 'master' as the name for the initial branch. This default branch name\cf1\highlight2 
+\par \cf8\highlight0 hint: is subject to change. To configure the initial branch name to use in all\cf1\highlight2 
+\par \cf8\highlight0 hint: of your new repositories, which will suppress this warning, call:\cf1\highlight2 
+\par \cf8\highlight0 hint:\cf1\highlight2 
+\par \cf8\highlight0 hint: \cf0   \cf8 git config --global init.defaultBranch <name>\cf1\highlight2 
+\par \cf8\highlight0 hint:\cf1\highlight2 
+\par \cf8\highlight0 hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and\cf1\highlight2 
+\par \cf8\highlight0 hint: 'development'. The just-created branch can be renamed via this command:\cf1\highlight2 
+\par \cf8\highlight0 hint:\cf1\highlight2 
+\par \cf8\highlight0 hint: \cf0   \cf8 git branch -m <name>\cf1\highlight2 
+\par \cf0\highlight0 Initialized empty Git repository in /home/ec2-user/Vijay/GITREPO/.git/\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-10-0-0-87 Vijay]# ll\cf1\highlight2 
+\par \cf0\highlight0 total 0\cf1\highlight2 
+\par \cf0\highlight0 drwxr-xr-x 3 root root 18 Dec 18 12:55 \cf9 GITREPO\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-10-0-0-87 Vijay]# cd GITREPO/\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-10-0-0-87 GITREPO]# ll\cf1\highlight2 
+\par \cf0\highlight0 total 0\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-10-0-0-87 GITREPO]# touch one.txt\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-10-0-0-87 GITREPO]# vim one.txt\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-10-0-0-87 GITREPO]# vi one.txt\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-10-0-0-87 GITREPO]# rm -rf one.txt\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-10-0-0-87 GITREPO]# ll\cf1\highlight2 
+\par \cf0\highlight0 total 0\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-10-0-0-87 GITREPO]# vi 1.txt\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-10-0-0-87 GITREPO]# git init\cf1\highlight2 
+\par \cf0\highlight0 Reinitialized existing Git repository in /home/ec2-user/Vijay/GITREPO/.git/\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-10-0-0-87 GITREPO]# git status\cf1\highlight2 
+\par \cf0\highlight0 On branch master\cf1\highlight2 
+\par 
+\par \cf0\highlight0 No commits yet\cf1\highlight2 
+\par 
+\par \cf0\highlight0 Untracked files:\cf1\highlight2 
+\par \cf0\highlight0   (use "git add <file>..." to include in what will be committed)\cf1\highlight2 
+\par \cf0\highlight0         \cf6 1.txt\cf1\highlight2 
+\par 
+\par \cf0\highlight0 nothing added to commit but untracked files present (use "git add" to track)\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-10-0-0-87 GITREPO]# git add 1.txt\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-10-0-0-87 GITREPO]# git status\cf1\highlight2 
+\par \cf0\highlight0 On branch master\cf1\highlight2 
+\par 
+\par \cf0\highlight0 No commits yet\cf1\highlight2 
+\par 
+\par \cf0\highlight0 Changes to be committed:\cf1\highlight2 
+\par \cf0\highlight0   (use "git rm --cached <file>..." to unstage)\cf1\highlight2 
+\par \cf0\highlight0         \cf10 new file:   1.txt\cf1\highlight2 
+\par 
+\par \cf0\highlight0 [root@ip-10-0-0-87 GITREPO]# vi 2.txt\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-10-0-0-87 GITREPO]# git status\cf1\highlight2 
+\par \cf0\highlight0 On branch master\cf1\highlight2 
+\par 
+\par \cf0\highlight0 No commits yet\cf1\highlight2 
+\par 
+\par \cf0\highlight0 Changes to be committed:\cf1\highlight2 
+\par \cf0\highlight0   (use "git rm --cached <file>..." to unstage)\cf1\highlight2 
+\par \cf0\highlight0         \cf10 new file:   1.txt\cf1\highlight2 
+\par 
+\par \cf0\highlight0 Untracked files:\cf1\highlight2 
+\par \cf0\highlight0   (use "git add <file>..." to include in what will be committed)\cf1\highlight2 
+\par \cf0\highlight0         \cf6 2.txt\cf1\highlight2 
+\par 
+\par \cf0\highlight0 [root@ip-10-0-0-87 GITREPO]# git add *.txt\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-10-0-0-87 GITREPO]# git status\cf1\highlight2 
+\par \cf0\highlight0 On branch master\cf1\highlight2 
+\par 
+\par \cf0\highlight0 No commits yet\cf1\highlight2 
+\par 
+\par \cf0\highlight0 Changes to be committed:\cf1\highlight2 
+\par \cf0\highlight0   (use "git rm --cached <file>..." to unstage)\cf1\highlight2 
+\par \cf0\highlight0         \cf10 new file:   1.txt\cf1\highlight2 
+\par \cf0\highlight0         \cf10 new file:   2.txt\cf1\highlight2 
+\par 
+\par \cf0\highlight0 [root@ip-10-0-0-87 GITREPO]# vi 3.html\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-10-0-0-87 GITREPO]# cat 3.html\cf1\highlight2 
+\par \cf0\highlight0 This HTML file number is 3\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-10-0-0-87 GITREPO]# cat 2.txt\cf1\highlight2 
+\par \cf0\highlight0 This file number is 2\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-10-0-0-87 GITREPO]# cat 1.txt\cf1\highlight2 
+\par \cf0\highlight0 This file number is 1\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-10-0-0-87 GITREPO]# cat > 1.txt\cf1\highlight2 
+\par \cf0\highlight0 This text file number is 1\cf1\highlight2 
+\par \cf0\highlight0 ^C\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-10-0-0-87 GITREPO]# cat 1.txt\cf1\highlight2 
+\par \cf0\highlight0 This text file number is 1\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-10-0-0-87 GITREPO]# git diff\cf1\highlight2 
+\par \cf0\highlight0\b diff --git a/1.txt b/1.txt\cf1\highlight2\b0 
+\par \cf0\highlight0\b index 4fe77f5..e5c1ff0 100644\cf1\highlight2\b0 
+\par \cf0\highlight0\b --- a/1.txt\cf1\highlight2\b0 
+\par \cf0\highlight0\b +++ b/1.txt\cf1\highlight2\b0 
+\par \cf7\highlight0 @@ -1 +1 @@\cf1\highlight2 
+\par \cf6\highlight0 -This file number is 1\cf1\highlight2 
+\par \cf10\highlight0 +This text file number is 1\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-10-0-0-87 GITREPO]# git commit 1.txt -m "Adding File 1"\cf1\highlight2 
+\par \cf0\highlight0 [master (root-commit) ee7aa4b] Adding File 1\cf1\highlight2 
+\par \cf0\highlight0  Committer: root <root@ip-10-0-0-87.ap-south-1.compute.internal>\cf1\highlight2 
+\par \cf0\highlight0 Your name and email address were configured automatically based\cf1\highlight2 
+\par \cf0\highlight0 on your username and hostname. Please check that they are accurate.\cf1\highlight2 
+\par \cf0\highlight0 You can suppress this message by setting them explicitly. Run the\cf1\highlight2 
+\par \cf0\highlight0 following command and follow the instructions in your editor to edit\cf1\highlight2 
+\par \cf0\highlight0 your configuration file:\cf1\highlight2 
+\par 
+\par \cf0\highlight0     git config --global --edit\cf1\highlight2 
+\par 
+\par \cf0\highlight0 After doing this, you may fix the identity used for this commit with:\cf1\highlight2 
+\par 
+\par \cf0\highlight0     git commit --amend --reset-author\cf1\highlight2 
+\par 
+\par \cf0\highlight0  1 file changed, 1 insertion(+)\cf1\highlight2 
+\par \cf0\highlight0  create mode 100644 1.txt\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-10-0-0-87 GITREPO]# git config --global --edit\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-10-0-0-87 GITREPO]# git config --global user.name\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-10-0-0-87 GITREPO]# git config --global user.name "CloudService2021"\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-10-0-0-87 GITREPO]# git config --global user.email "gavijay2014@gmail.com"\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-10-0-0-87 GITREPO]# git status\cf1\highlight2 
+\par \cf0\highlight0 On branch master\cf1\highlight2 
+\par \cf0\highlight0 Changes to be committed:\cf1\highlight2 
+\par \cf0\highlight0   (use "git restore --staged <file>..." to unstage)\cf1\highlight2 
+\par \cf0\highlight0         \cf10 new file:   2.txt\cf1\highlight2 
+\par 
+\par \cf0\highlight0 Untracked files:\cf1\highlight2 
+\par \cf0\highlight0   (use "git add <file>..." to include in what will be committed)\cf1\highlight2 
+\par \cf0\highlight0         \cf6 3.html\cf1\highlight2 
+\par 
+\par \cf0\highlight0 [root@ip-10-0-0-87 GITREPO]# whoami\cf1\highlight2 
+\par \cf0\highlight0 root\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-10-0-0-87 GITREPO]# ll\cf1\highlight2 
+\par \cf0\highlight0 total 12\cf1\highlight2 
+\par \cf0\highlight0 -rw-r--r-- 1 root root 27 Dec 18 13:13 1.txt\cf1\highlight2 
+\par \cf0\highlight0 -rw-r--r-- 1 root root 22 Dec 18 13:12 2.txt\cf1\highlight2 
+\par \cf0\highlight0 -rw-r--r-- 1 root root 27 Dec 18 13:13 3.html\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-10-0-0-87 GITREPO]# ll -a\cf1\highlight2 
+\par \cf0\highlight0 total 12\cf1\highlight2 
+\par \cf0\highlight0 drwxr-xr-x 3 root root  58 Dec 18 13:13 \cf9 .\cf1\highlight2 
+\par \cf0\highlight0 drwxr-xr-x 3 root root  21 Dec 18 12:55 \cf9 ..\cf1\highlight2 
+\par \cf0\highlight0 -rw-r--r-- 1 root root  27 Dec 18 13:13 1.txt\cf1\highlight2 
+\par \cf0\highlight0 -rw-r--r-- 1 root root  22 Dec 18 13:12 2.txt\cf1\highlight2 
+\par \cf0\highlight0 -rw-r--r-- 1 root root  27 Dec 18 13:13 3.html\cf1\highlight2 
+\par \cf0\highlight0 drwxr-xr-x 8 root root 166 Dec 18 13:18 \cf9 .git\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-10-0-0-87 GITREPO]# cd .git/\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-10-0-0-87 .git]# ll\cf1\highlight2 
+\par \cf0\highlight0 total 24\cf1\highlight2 
+\par \cf0\highlight0 drwxr-xr-x  2 root root    6 Dec 18 12:55 \cf9 branches\cf1\highlight2 
+\par \cf0\highlight0 -rw-r--r--  1 root root   14 Dec 18 13:16 COMMIT_EDITMSG\cf1\highlight2 
+\par \cf0\highlight0 -rw-r--r--  1 root root   92 Dec 18 13:10 config\cf1\highlight2 
+\par \cf0\highlight0 -rw-r--r--  1 root root   73 Dec 18 12:55 description\cf1\highlight2 
+\par \cf0\highlight0 -rw-r--r--  1 root root   23 Dec 18 12:55 HEAD\cf1\highlight2 
+\par \cf0\highlight0 drwxr-xr-x  2 root root 4096 Dec 18 12:55 \cf9 hooks\cf1\highlight2 
+\par \cf0\highlight0 -rw-r--r--  1 root root  209 Dec 18 13:16 index\cf1\highlight2 
+\par \cf0\highlight0 drwxr-xr-x  2 root root   21 Dec 18 12:55 \cf9 info\cf1\highlight2 
+\par \cf0\highlight0 drwxr-xr-x  3 root root   30 Dec 18 13:16 \cf9 logs\cf1\highlight2 
+\par \cf0\highlight0 drwxr-xr-x 10 root root   90 Dec 18 13:16 \cf9 objects\cf1\highlight2 
+\par \cf0\highlight0 drwxr-xr-x  4 root root   31 Dec 18 12:55 \cf9 refs\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-10-0-0-87 .git]# cd ..\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-10-0-0-87 GITREPO]# git branch -a\cf1\highlight2 
+\par \cf0\highlight0 * \cf10 master\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-10-0-0-87 GITREPO]# git log\cf1\highlight2 
+\par \cf8\highlight0 commit ee7aa4bc2ab7d142a9e38f4984e525384db101cf (\cf11 HEAD -> \cf3 master\cf8 )\cf1\highlight2 
+\par \cf0\highlight0 Author: root <root@ip-10-0-0-87.ap-south-1.compute.internal>\cf1\highlight2 
+\par \cf0\highlight0 Date:   Sat Dec 18 13:16:05 2021 +0000\cf1\highlight2 
+\par 
+\par \cf0\highlight0     Adding File 1\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-10-0-0-87 GITREPO]# git config --global user.name "CloudService2021"\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-10-0-0-87 GITREPO]# git config --global user.email "gavijay2014@gmail.com"\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-10-0-0-87 GITREPO]# git log\cf1\highlight2 
+\par \cf8\highlight0 commit ee7aa4bc2ab7d142a9e38f4984e525384db101cf (\cf11 HEAD -> \cf3 master\cf8 )\cf1\highlight2 
+\par \cf0\highlight0 Author: root <root@ip-10-0-0-87.ap-south-1.compute.internal>\cf1\highlight2 
+\par \cf0\highlight0 Date:   Sat Dec 18 13:16:05 2021 +0000\cf1\highlight2 
+\par 
+\par \cf0\highlight0     Adding File 1\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-10-0-0-87 GITREPO]# git config user.name "CloudService2021"\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-10-0-0-87 GITREPO]# git config user.email "gavijay2014@gmail.com"\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-10-0-0-87 GITREPO]# git log\cf1\highlight2 
+\par \cf8\highlight0 commit ee7aa4bc2ab7d142a9e38f4984e525384db101cf (\cf11 HEAD -> \cf3 master\cf8 )\cf1\highlight2 
+\par \cf0\highlight0 Author: root <root@ip-10-0-0-87.ap-south-1.compute.internal>\cf1\highlight2 
+\par \cf0\highlight0 Date:   Sat Dec 18 13:16:05 2021 +0000\cf1\highlight2 
+\par 
+\par \cf0\highlight0     Adding File 1\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-10-0-0-87 GITREPO]# git diff 1.txt\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-10-0-0-87 GITREPO]# git diff 2.txt\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-10-0-0-87 GITREPO]# git log --oneline\cf1\highlight2 
+\par \cf8\highlight0 ee7aa4b (\cf11 HEAD -> \cf3 master\cf8 )\cf0  Adding File 1\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-10-0-0-87 GITREPO]# git log --all\cf1\highlight2 
+\par \cf8\highlight0 commit ee7aa4bc2ab7d142a9e38f4984e525384db101cf (\cf11 HEAD -> \cf3 master\cf8 )\cf1\highlight2 
+\par \cf0\highlight0 Author: root <root@ip-10-0-0-87.ap-south-1.compute.internal>\cf1\highlight2 
+\par \cf0\highlight0 Date:   Sat Dec 18 13:16:05 2021 +0000\cf1\highlight2 
+\par 
+\par \cf0\highlight0     Adding File 1\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-10-0-0-87 GITREPO]# git log --all --decorate --oneline\cf1\highlight2 
+\par \cf8\highlight0 ee7aa4b (\cf11 HEAD -> \cf3 master\cf8 )\cf0  Adding File 1\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-10-0-0-87 GITREPO]# git log --all --decorate --oneline --graph\cf1\highlight2 
+\par \cf0\highlight0 * \cf8 ee7aa4b (\cf11 HEAD -> \cf3 master\cf8 )\cf0  Adding File 1\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-10-0-0-87 GITREPO]# git branch Newbranch1\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-10-0-0-87 GITREPO]# git branch -a\cf1\highlight2 
+\par \cf0\highlight0   Newbranch1\cf1\highlight2 
+\par \cf0\highlight0 * \cf10 master\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-10-0-0-87 GITREPO]# git checkout Newbranch1\cf1\highlight2 
+\par \cf0\highlight0 A       2.txt\cf1\highlight2 
+\par \cf0\highlight0 Switched to branch 'Newbranch1'\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-10-0-0-87 GITREPO]# git status\cf1\highlight2 
+\par \cf0\highlight0 On branch Newbranch1\cf1\highlight2 
+\par \cf0\highlight0 Changes to be committed:\cf1\highlight2 
+\par \cf0\highlight0   (use "git restore --staged <file>..." to unstage)\cf1\highlight2 
+\par \cf0\highlight0         \cf10 new file:   2.txt\cf1\highlight2 
+\par 
+\par \cf0\highlight0 Untracked files:\cf1\highlight2 
+\par \cf0\highlight0   (use "git add <file>..." to include in what will be committed)\cf1\highlight2 
+\par \cf0\highlight0         \cf6 3.html\cf1\highlight2 
+\par 
+\par \cf0\highlight0 [root@ip-10-0-0-87 GITREPO]# git add .\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-10-0-0-87 GITREPO]# git status\cf1\highlight2 
+\par \cf0\highlight0 On branch Newbranch1\cf1\highlight2 
+\par \cf0\highlight0 Changes to be committed:\cf1\highlight2 
+\par \cf0\highlight0   (use "git restore --staged <file>..." to unstage)\cf1\highlight2 
+\par \cf0\highlight0         \cf10 new file:   2.txt\cf1\highlight2 
+\par \cf0\highlight0         \cf10 new file:   3.html\cf1\highlight2 
+\par 
+\par \cf0\highlight0 [root@ip-10-0-0-87 GITREPO]# git checkout master\cf1\highlight2 
+\par \cf0\highlight0 A       2.txt\cf1\highlight2 
+\par \cf0\highlight0 A       3.html\cf1\highlight2 
+\par \cf0\highlight0 Switched to branch 'master'\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-10-0-0-87 GITREPO]# git status\cf1\highlight2 
+\par \cf0\highlight0 On branch master\cf1\highlight2 
+\par \cf0\highlight0 Changes to be committed:\cf1\highlight2 
+\par \cf0\highlight0   (use "git restore --staged <file>..." to unstage)\cf1\highlight2 
+\par \cf0\highlight0         \cf10 new file:   2.txt\cf1\highlight2 
+\par \cf0\highlight0         \cf10 new file:   3.html\cf1\highlight2 
+\par 
+\par \cf0\highlight0 [root@ip-10-0-0-87 GITREPO]# git commit -a -m "Adding file 2 & 3"\cf1\highlight2 
+\par \cf0\highlight0 [master 0141ca0] Adding file 2 & 3\cf1\highlight2 
+\par \cf0\highlight0  2 files changed, 2 insertions(+)\cf1\highlight2 
+\par \cf0\highlight0  create mode 100644 2.txt\cf1\highlight2 
+\par \cf0\highlight0  create mode 100644 3.html\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-10-0-0-87 GITREPO]# git status\cf1\highlight2 
+\par \cf0\highlight0 On branch master\cf1\highlight2 
+\par \cf0\highlight0 nothing to commit, working tree clean\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-10-0-0-87 GITREPO]# git checkout Newbranch1\cf1\highlight2 
+\par \cf0\highlight0 Switched to branch 'Newbranch1'\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-10-0-0-87 GITREPO]# git status\cf1\highlight2 
+\par \cf0\highlight0 On branch Newbranch1\cf1\highlight2 
+\par \cf0\highlight0 nothing to commit, working tree clean\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-10-0-0-87 GITREPO]# git checkout .\cf1\highlight2 
+\par \cf0\highlight0 Updated 0 paths from the index\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-10-0-0-87 GITREPO]# git status\cf1\highlight2 
+\par \cf0\highlight0 On branch Newbranch1\cf1\highlight2 
+\par \cf0\highlight0 nothing to commit, working tree clean\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-10-0-0-87 GITREPO]# git log --all --docorate --oneline --graph\cf1\highlight2 
+\par \cf0\highlight0 fatal: unrecognized argument: --docorate\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-10-0-0-87 GITREPO]# git log --all --decorate --oneline --graph\cf1\highlight2 
+\par \cf0\highlight0 * \cf8 0141ca0 (\cf3 master\cf8 )\cf0  Adding file 2 & 3\cf1\highlight2 
+\par \cf0\highlight0 * \cf8 ee7aa4b (\cf11 HEAD -> \cf3 Newbranch1\cf8 )\cf0  Adding File 1\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-10-0-0-87 GITREPO]# git checkout Newbranch1\cf1\highlight2 
+\par \cf0\highlight0 Already on 'Newbranch1'\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-10-0-0-87 GITREPO]# git checkout master\cf1\highlight2 
+\par \cf0\highlight0 Switched to branch 'master'\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-10-0-0-87 GITREPO]# git status\cf1\highlight2 
+\par \cf0\highlight0 On branch master\cf1\highlight2 
+\par \cf0\highlight0 nothing to commit, working tree clean\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-10-0-0-87 GITREPO]# git log --all --decorate --oneline --graph\cf1\highlight2 
+\par \cf0\highlight0 * \cf8 0141ca0 (\cf11 HEAD -> \cf3 master\cf8 )\cf0  Adding file 2 & 3\cf1\highlight2 
+\par \cf0\highlight0 * \cf8 ee7aa4b (\cf3 Newbranch1\cf8 )\cf0  Adding File 1\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-10-0-0-87 GITREPO]# git commit --amend\cf1\highlight2 
+\par \cf0\highlight0 [master af58ad8] Adding file 2 & 3\cf1\highlight2 
+\par \cf0\highlight0  Date: Sat Dec 18 13:39:56 2021 +0000\cf1\highlight2 
+\par \cf0\highlight0  2 files changed, 2 insertions(+)\cf1\highlight2 
+\par \cf0\highlight0  create mode 100644 2.txt\cf1\highlight2 
+\par \cf0\highlight0  create mode 100644 3.html\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-10-0-0-87 GITREPO]# git merge Newbranch1\cf1\highlight2 
+\par \cf0\highlight0 Already up to date.\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-10-0-0-87 GITREPO]# touch 4.docx\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-10-0-0-87 GITREPO]# vi 4.docx\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-10-0-0-87 GITREPO]# rm -rf 4.docx\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-10-0-0-87 GITREPO]# ll\cf1\highlight2 
+\par \cf0\highlight0 total 12\cf1\highlight2 
+\par \cf0\highlight0 -rw-r--r-- 1 root root 27 Dec 18 13:13 1.txt\cf1\highlight2 
+\par \cf0\highlight0 -rw-r--r-- 1 root root 22 Dec 18 13:42 2.txt\cf1\highlight2 
+\par \cf0\highlight0 -rw-r--r-- 1 root root 27 Dec 18 13:42 3.html\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-10-0-0-87 GITREPO]# vi 4.html\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-10-0-0-87 GITREPO]# vi 5.doc\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-10-0-0-87 GITREPO]# cat 5.doc\cf1\highlight2 
+\par \cf0\highlight0 This is document file\cf1\highlight2 
+\par 
+\par \cf0\highlight0 This file number is 5\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-10-0-0-87 GITREPO]# git status\cf1\highlight2 
+\par \cf0\highlight0 On branch master\cf1\highlight2 
+\par \cf0\highlight0 Untracked files:\cf1\highlight2 
+\par \cf0\highlight0   (use "git add <file>..." to include in what will be committed)\cf1\highlight2 
+\par \cf0\highlight0         \cf6 4.html\cf1\highlight2 
+\par \cf0\highlight0         \cf6 5.doc\cf1\highlight2 
+\par 
+\par \cf0\highlight0 nothing added to commit but untracked files present (use "git add" to track)\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-10-0-0-87 GITREPO]# git merge Newbranch1\cf1\highlight2 
+\par \cf0\highlight0 Already up to date.\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-10-0-0-87 GITREPO]# git checkout Newbranch1\cf1\highlight2 
+\par \cf0\highlight0 Switched to branch 'Newbranch1'\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-10-0-0-87 GITREPO]# ll\cf1\highlight2 
+\par \cf0\highlight0 total 12\cf1\highlight2 
+\par \cf0\highlight0 -rw-r--r-- 1 root root 27 Dec 18 13:13 1.txt\cf1\highlight2 
+\par \cf0\highlight0 -rw-r--r-- 1 root root 27 Dec 18 13:47 4.html\cf1\highlight2 
+\par \cf0\highlight0 -rw-r--r-- 1 root root 45 Dec 18 13:47 5.doc\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-10-0-0-87 GITREPO]# git push orgin\cf1\highlight2 
+\par \cf0\highlight0 fatal: The current branch Newbranch1 has no upstream branch.\cf1\highlight2 
+\par \cf0\highlight0 To push the current branch and set the remote as upstream, use\cf1\highlight2 
+\par 
+\par \cf0\highlight0     git push --set-upstream orgin Newbranch1\cf1\highlight2 
+\par 
+\par \cf0\highlight0 [root@ip-10-0-0-87 GITREPO]# git push --set-upstream orgin Newbranch1\cf1\highlight2 
+\par \cf0\highlight0 fatal: 'orgin' does not appear to be a git repository\cf1\highlight2 
+\par \cf0\highlight0 fatal: Could not read from remote repository.\cf1\highlight2 
+\par 
+\par \cf0\highlight0 Please make sure you have the correct access rights\cf1\highlight2 
+\par \cf0\highlight0 and the repository exists.\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-10-0-0-87 GITREPO]# git push --set-upstream GITREPO  Newbranch1\cf1\highlight2 
+\par \cf0\highlight0 fatal: 'GITREPO' does not appear to be a git repository\cf1\highlight2 
+\par \cf0\highlight0 fatal: Could not read from remote repository.\cf1\highlight2 
+\par 
+\par \cf0\highlight0 Please make sure you have the correct access rights\cf1\highlight2 
+\par \cf0\highlight0 and the repository exists.\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-10-0-0-87 GITREPO]# git push --set-upstream .git Newbranch1\cf1\highlight2 
+\par \cf0\highlight0 Branch 'Newbranch1' set up to track remote branch 'Newbranch1' from '.git'.\cf1\highlight2 
+\par \cf0\highlight0 Everything up-to-date\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-10-0-0-87 GITREPO]# git status\cf1\highlight2 
+\par \cf0\highlight0 On branch Newbranch1\cf1\highlight2 
+\par \cf0\highlight0 Untracked files:\cf1\highlight2 
+\par \cf0\highlight0   (use "git add <file>..." to include in what will be committed)\cf1\highlight2 
+\par \cf0\highlight0         \cf6 4.html\cf1\highlight2 
+\par \cf0\highlight0         \cf6 5.doc\cf1\highlight2 
+\par 
+\par \cf0\highlight0 nothing added to commit but untracked files present (use "git add" to track)\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-10-0-0-87 GITREPO]# ll\cf1\highlight2 
+\par \cf0\highlight0 total 12\cf1\highlight2 
+\par \cf0\highlight0 -rw-r--r-- 1 root root 27 Dec 18 13:13 1.txt\cf1\highlight2 
+\par \cf0\highlight0 -rw-r--r-- 1 root root 27 Dec 18 13:47 4.html\cf1\highlight2 
+\par \cf0\highlight0 -rw-r--r-- 1 root root 45 Dec 18 13:47 5.doc\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-10-0-0-87 GITREPO]# git checkout master\cf1\highlight2 
+\par \cf0\highlight0 Switched to branch 'master'\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-10-0-0-87 GITREPO]# ll\cf1\highlight2 
+\par \cf0\highlight0 total 20\cf1\highlight2 
+\par \cf0\highlight0 -rw-r--r-- 1 root root 27 Dec 18 13:13 1.txt\cf1\highlight2 
+\par \cf0\highlight0 -rw-r--r-- 1 root root 22 Dec 18 13:52 2.txt\cf1\highlight2 
+\par \cf0\highlight0 -rw-r--r-- 1 root root 27 Dec 18 13:52 3.html\cf1\highlight2 
+\par \cf0\highlight0 -rw-r--r-- 1 root root 27 Dec 18 13:47 4.html\cf1\highlight2 
+\par \cf0\highlight0 -rw-r--r-- 1 root root 45 Dec 18 13:47 5.doc\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-10-0-0-87 GITREPO]# git log --all --decorate\cf1\highlight2 
+\par \cf8\highlight0 commit af58ad87b5659d6080ce383f361d9eab031c1344 (\cf11 HEAD -> \cf3 master\cf8 )\cf1\highlight2 
+\par \cf0\highlight0 Author: CloudService2021 <gavijay2014@gmail.com>\cf1\highlight2 
+\par \cf0\highlight0 Date:   Sat Dec 18 13:39:56 2021 +0000\cf1\highlight2 
+\par 
+\par \cf0\highlight0     Adding file 2 & 3\cf1\highlight2 
+\par 
+\par \cf8\highlight0 commit ee7aa4bc2ab7d142a9e38f4984e525384db101cf (\cf3 Newbranch1\cf8 )\cf1\highlight2 
+\par \cf0\highlight0 Author: root <root@ip-10-0-0-87.ap-south-1.compute.internal>\cf1\highlight2 
+\par \cf0\highlight0 Date:   Sat Dec 18 13:16:05 2021 +0000\cf1\highlight2 
+\par 
+\par \cf0\highlight0     Adding File 1\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-10-0-0-87 GITREPO]# git log --all --decorate --graph\cf1\highlight2 
+\par \cf0\highlight0 * \cf8 commit af58ad87b5659d6080ce383f361d9eab031c1344 (\cf11 HEAD -> \cf3 master\cf8 )\cf1\highlight2 
+\par \cf6\highlight0 |\cf0  Author: CloudService2021 <gavijay2014@gmail.com>\cf1\highlight2 
+\par \cf6\highlight0 |\cf0  Date:   Sat Dec 18 13:39:56 2021 +0000\cf1\highlight2 
+\par \cf6\highlight0 |\cf1\highlight2 
+\par \cf6\highlight0 |\cf0      Adding file 2 & 3\cf1\highlight2 
+\par \cf6\highlight0 |\cf1\highlight2 
+\par \cf0\highlight0 * \cf8 commit ee7aa4bc2ab7d142a9e38f4984e525384db101cf (\cf3 Newbranch1\cf8 )\cf1\highlight2 
+\par \cf0\highlight0   Author: root <root@ip-10-0-0-87.ap-south-1.compute.internal>\cf1\highlight2 
+\par \cf0\highlight0   Date:   Sat Dec 18 13:16:05 2021 +0000\cf1\highlight2 
+\par 
+\par \cf0\highlight0       Adding File 1\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-10-0-0-87 GITREPO]# git merge Newbranch1\cf1\highlight2 
+\par \cf0\highlight0 Already up to date.\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-10-0-0-87 GITREPO]# git merge master\cf1\highlight2 
+\par \cf0\highlight0 Already up to date.\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-10-0-0-87 GITREPO]# git commit -a -m "Adding Files 4 & 5"\cf1\highlight2 
+\par \cf0\highlight0 On branch master\cf1\highlight2 
+\par \cf0\highlight0 Untracked files:\cf1\highlight2 
+\par \cf0\highlight0   (use "git add <file>..." to include in what will be committed)\cf1\highlight2 
+\par \cf0\highlight0         \cf6 4.html\cf1\highlight2 
+\par \cf0\highlight0         \cf6 5.doc\cf1\highlight2 
+\par 
+\par \cf0\highlight0 nothing added to commit but untracked files present (use "git add" to track)\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-10-0-0-87 GITREPO]# git add .\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-10-0-0-87 GITREPO]# git commit -a -m "Adding Files 4 & 5"\cf1\highlight2 
+\par \cf0\highlight0 [master 20c2ec9] Adding Files 4 & 5\cf1\highlight2 
+\par \cf0\highlight0  2 files changed, 4 insertions(+)\cf1\highlight2 
+\par \cf0\highlight0  create mode 100644 4.html\cf1\highlight2 
+\par \cf0\highlight0  create mode 100644 5.doc\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-10-0-0-87 GITREPO]# git status\cf1\highlight2 
+\par \cf0\highlight0 On branch master\cf1\highlight2 
+\par \cf0\highlight0 nothing to commit, working tree clean\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-10-0-0-87 GITREPO]# git checkout Newbranch1\cf1\highlight2 
+\par \cf0\highlight0 Switched to branch 'Newbranch1'\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-10-0-0-87 GITREPO]# git status\cf1\highlight2 
+\par \cf0\highlight0 On branch Newbranch1\cf1\highlight2 
+\par \cf0\highlight0 nothing to commit, working tree clean\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-10-0-0-87 GITREPO]# git log --all --graph\cf1\highlight2 
+\par \cf0\highlight0 * \cf8 commit 20c2ec95587adf4ac5cd4e62480201e44d905cf1 (\cf3 master\cf8 )\cf1\highlight2 
+\par \cf6\highlight0 |\cf0  Author: CloudService2021 <gavijay2014@gmail.com>\cf1\highlight2 
+\par \cf6\highlight0 |\cf0  Date:   Sat Dec 18 13:55:19 2021 +0000\cf1\highlight2 
+\par \cf6\highlight0 |\cf1\highlight2 
+\par \cf6\highlight0 |\cf0      Adding Files 4 & 5\cf1\highlight2 
+\par \cf6\highlight0 |\cf1\highlight2 
+\par \cf0\highlight0 * \cf8 commit af58ad87b5659d6080ce383f361d9eab031c1344\cf1\highlight2 
+\par \cf6\highlight0 |\cf0  Author: CloudService2021 <gavijay2014@gmail.com>\cf1\highlight2 
+\par \cf6\highlight0 |\cf0  Date:   Sat Dec 18 13:39:56 2021 +0000\cf1\highlight2 
+\par \cf6\highlight0 |\cf1\highlight2 
+\par \cf6\highlight0 |\cf0      Adding file 2 & 3\cf1\highlight2 
+\par \cf6\highlight0 |\cf1\highlight2 
+\par \cf0\highlight0 * \cf8 commit ee7aa4bc2ab7d142a9e38f4984e525384db101cf (\cf11 HEAD -> \cf3 Newbranch1\cf8 )\cf1\highlight2 
+\par \cf0\highlight0   Author: root <root@ip-10-0-0-87.ap-south-1.compute.internal>\cf1\highlight2 
+\par \cf0\highlight0   Date:   Sat Dec 18 13:16:05 2021 +0000\cf1\highlight2 
+\par 
+\par \cf0\highlight0       Adding File 1\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-10-0-0-87 GITREPO]# ll\cf1\highlight2 
+\par \cf0\highlight0 total 4\cf1\highlight2 
+\par \cf0\highlight0 -rw-r--r-- 1 root root 27 Dec 18 13:13 1.txt\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-10-0-0-87 GITREPO]# git add 1.txt\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-10-0-0-87 GITREPO]# git commit -m "Adding again file 1"\cf1\highlight2 
+\par \cf0\highlight0 On branch Newbranch1\cf1\highlight2 
+\par \cf0\highlight0 nothing to commit, working tree clean\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-10-0-0-87 GITREPO]# git log --all --graph --oneline\cf1\highlight2 
+\par \cf0\highlight0 * \cf8 20c2ec9 (\cf3 master\cf8 )\cf0  Adding Files 4 & 5\cf1\highlight2 
+\par \cf0\highlight0 * \cf8 af58ad8\cf0  Adding file 2 & 3\cf1\highlight2 
+\par \cf0\highlight0 * \cf8 ee7aa4b (\cf11 HEAD -> \cf3 Newbranch1\cf8 )\cf0  Adding File 1\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-10-0-0-87 GITREPO]# git checkout af58ad8\cf1\highlight2 
+\par \cf0\highlight0 Note: switching to 'af58ad8'.\cf1\highlight2 
+\par 
+\par \cf0\highlight0 You are in 'detached HEAD' state. You can look around, make experimental\cf1\highlight2 
+\par \cf0\highlight0 changes and commit them, and you can discard any commits you make in this\cf1\highlight2 
+\par \cf0\highlight0 state without impacting any branches by switching back to a branch.\cf1\highlight2 
+\par 
+\par \cf0\highlight0 If you want to create a new branch to retain commits you create, you may\cf1\highlight2 
+\par \cf0\highlight0 do so (now or later) by using -c with the switch command. Example:\cf1\highlight2 
+\par 
+\par \cf0\highlight0   git switch -c <new-branch-name>\cf1\highlight2 
+\par 
+\par \cf0\highlight0 Or undo this operation with:\cf1\highlight2 
+\par 
+\par \cf0\highlight0   git switch -\cf1\highlight2 
+\par 
+\par \cf0\highlight0 Turn off this advice by setting config variable advice.detachedHead to false\cf1\highlight2 
+\par 
+\par \cf0\highlight0 HEAD is now at af58ad8 Adding file 2 & 3\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-10-0-0-87 GITREPO]# git swit\cf1\highlight2 
+\par \cf6\highlight0 Network error: Software caused connection abort\cf1\highlight2 
+\par 
+\par \cf12\highlight0\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\cf1\highlight2 
+\par 
+\par \cf6\highlight0 Session stopped\cf1\highlight2 
+\par \cf0\highlight0     - Press \cf5 <return>\cf0  to exit tab\cf1\highlight2 
+\par \cf0\highlight0     - Press \cf5 R\cf0  to restart session\cf1\highlight2 
+\par \cf0\highlight0     - Press \cf5 S\cf0  to save terminal output to file\cf1\highlight2 
+\par \pard\cf0\highlight0\f2 
+\par }
+ 
